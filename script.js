@@ -32,7 +32,32 @@ const restaurant = {
   },
 };
 
-// Destructuring arrays
+/* Destructuring Objects */
+
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
+
+const {
+  name: restaurantNames,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantNames, hours, tags);
+
+//Default values
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
+
+//Mutating Variables
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+
+({ a, b } = obj);
+console.log(a, b);
+
+////////////////////////////////////////////////////////////
+/* // Destructuring arrays
 
 const arr = [2, 3, 4];
 const a = arr[0];
@@ -52,7 +77,7 @@ main = secondary;
 secondary = temp;
 console.log(main, secondary); */
 
-[main, secondary] = [secondary, main];
+/* [main, secondary] = [secondary, main];
 console.log(main, secondary);
 
 //Receive 2 return values from a function
@@ -69,4 +94,4 @@ console.log(i, j, k);
 
 //Default values
 const [p = 1, q = 1, r = 1] = [8, 9];
-console.log(p, q, r);
+console.log(p, q, r); */
