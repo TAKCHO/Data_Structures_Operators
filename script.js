@@ -12,10 +12,6 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-
   openingHours: {
     thu: {
       open: 12,
@@ -30,7 +26,25 @@ const restaurant = {
       close: 24,
     },
   },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+
+  orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
+    console.log(
+      `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]}
+      will be delivered to ${address} at ${time}`
+    );
+  },
 };
+
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'Via del Sole',
+  mainIndex: 2,
+  starterIndex: 2,
+});
 
 /* Destructuring Objects */
 
@@ -55,6 +69,13 @@ const obj = { a: 23, b: 7, c: 14 };
 
 ({ a, b } = obj);
 console.log(a, b);
+
+//Nested objects
+
+const {
+  fri: { open, close },
+} = openingHours;
+console.log(open, close);
 
 ////////////////////////////////////////////////////////////
 /* // Destructuring arrays
