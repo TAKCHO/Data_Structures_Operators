@@ -37,6 +37,11 @@ const restaurant = {
       will be delivered to ${address} at ${time}`
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, 
+    ${ing3}`);
+  },
 };
 
 restaurant.orderDelivery({
@@ -58,6 +63,31 @@ console.log(...newArr);
 const newMenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newMenu);
 
+//copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+//join 2 arrays
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+//iterables: arrays, strings, maps, sets. NOT objects
+const str = 'Tako';
+const letter = [...str, ' ', 'S.'];
+console.log(letter);
+console.log(...str);
+
+//Real-world examples
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1?"),
+//   prompt('Ingredient 2?'),
+//   prompt('Ingredient 3?'),
+// ];
+// console.log(ingredients);
+
+// restaurant.orderPasta(...ingredients);
+
+//objects
+const newRestaurant = { ...restaurant };
 /* Destructuring Objects */
 /* 
 const { name, openingHours, categories } = restaurant;
