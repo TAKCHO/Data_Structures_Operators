@@ -46,8 +46,20 @@ restaurant.orderDelivery({
   starterIndex: 2,
 });
 
-/* Destructuring Objects */
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
 
+const newArr = [1, 2, ...arr]; //spread operator
+console.log(newArr);
+
+console.log(...newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+/* Destructuring Objects */
+/* 
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
 
@@ -75,7 +87,7 @@ console.log(a, b);
 const {
   fri: { open, close },
 } = openingHours;
-console.log(open, close);
+console.log(open, close); */
 
 ////////////////////////////////////////////////////////////
 /* // Destructuring arrays
