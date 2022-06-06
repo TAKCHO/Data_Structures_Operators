@@ -173,4 +173,13 @@ console.log(p, q, r); */
 
 const arr = [1, 2, ...[3, 4]];
 
+//REST, because on LEFT side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+
+console.log(pizza, risotto, otherFood);
