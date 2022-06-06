@@ -169,6 +169,8 @@ console.log(p, q, r); */
 
 //// Rest patterns and Parameters
 
+// 1) destructuting
+
 /// SPREAD, because on RIGHT side of =
 
 const arr = [1, 2, ...[3, 4]];
@@ -183,3 +185,20 @@ const [pizza, , risotto, ...otherFood] = [
 ];
 
 console.log(pizza, risotto, otherFood);
+
+//objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+// 2)functions
+
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+};
+
+add(2, 3);
+add(4, 5, 6, 8, 6, 5);
+
+const x = [23, 5, 7];
+add(...x);
