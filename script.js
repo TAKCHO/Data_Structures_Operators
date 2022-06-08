@@ -49,6 +49,14 @@ const restaurant = {
   },
 };
 
+///////////////////USe ANY data type, return ANY data type, short-circuting
+console.log(3 || 'jonas');
+console.log('' || 'jonas');
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || '' || 'hello' || 23 || null);
+
 // restaurant.orderDelivery({
 //   time: '22:30',
 //   address: 'Via del Sole',
@@ -178,7 +186,7 @@ console.log(p, q, r); */
 
 /// SPREAD, because on RIGHT side of =
 
-const arr = [1, 2, ...[3, 4]];
+/* const arr = [1, 2, ...[3, 4]];
 
 //REST, because on LEFT side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
@@ -209,3 +217,5 @@ const x = [23, 5, 7];
 add(...x);
 
 restaurant.orderPizza('mushrooms', 'onions', 'olives', 'spinach');
+restaurant.orderPizza('mushrooms');
+ */
