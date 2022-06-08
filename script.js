@@ -49,6 +49,8 @@ const restaurant = {
   },
 };
 
+console.log('----- OR -----');
+
 ///////////////////USe ANY data type, return ANY data type, short-circuting
 console.log(3 || 'jonas');
 console.log('' || 'jonas');
@@ -56,6 +58,15 @@ console.log(true || 0);
 console.log(undefined || null);
 
 console.log(undefined || 0 || '' || 'hello' || 23 || null);
+
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log('----- AND -----');
 
 // restaurant.orderDelivery({
 //   time: '22:30',
