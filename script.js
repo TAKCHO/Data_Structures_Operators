@@ -67,6 +67,16 @@ const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
 
 console.log('----- AND -----');
+console.log(0 && 'jonas');
+console.log(7 && 'jonas');
+
+console.log('hello' && 23 && null && 'jonas');
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 
 // restaurant.orderDelivery({
 //   time: '22:30',
