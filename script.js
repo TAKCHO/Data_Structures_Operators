@@ -49,9 +49,16 @@ const restaurant = {
   },
 };
 
-console.log('----- OR -----');
+// restaurant.numGuests = 0;
+const guests = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests);
+
+//  NULLish: null and undefined (NOT 0 or "")
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
 
 ///////////////////USe ANY data type, return ANY data type, short-circuting
+/* console.log('----- OR -----');
 console.log(3 || 'jonas');
 console.log('' || 'jonas');
 console.log(true || 0);
@@ -76,7 +83,7 @@ if (restaurant.orderPizza) {
   restaurant.orderPizza('mushrooms', 'spinach');
 }
 
-restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach'); */
 
 // restaurant.orderDelivery({
 //   time: '22:30',
