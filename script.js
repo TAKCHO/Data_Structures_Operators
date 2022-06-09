@@ -49,13 +49,25 @@ const restaurant = {
   },
 };
 
-// restaurant.numGuests = 0;
+////////////// logical assignment operators
+
+const rest1 = {
+  name: 'Capri',
+  numGuests: 20,
+};
+
+const rest2 = {
+  name: 'La Piazza',
+  owner: 'Giovanni',
+};
+
+/* // restaurant.numGuests = 0;
 const guests = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guests);
 
 //  NULLish: null and undefined (NOT 0 or "")
 const guestCorrect = restaurant.numGuests ?? 10;
-console.log(guestCorrect);
+console.log(guestCorrect); */
 
 ///////////////////USe ANY data type, return ANY data type, short-circuting
 /* console.log('----- OR -----');
