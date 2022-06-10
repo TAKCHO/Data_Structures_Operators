@@ -49,9 +49,15 @@ const restaurant = {
   },
 };
 
+//////Looping Arrays: The for-of loop
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu) console.log(item);
+
 ////////////// logical assignment operators
 
-const rest1 = {
+/* const rest1 = {
   name: 'Capri',
   // numGuests: 20,
   numGuests: 0,
@@ -60,7 +66,7 @@ const rest1 = {
 const rest2 = {
   name: 'La Piazza',
   owner: 'Giovanni',
-};
+}; */
 
 // OR assignment operator
 // rest1.numGuests = rest1.numGuests || 10;
@@ -70,7 +76,7 @@ const rest2 = {
 rest2.numGuests ||= 10; */
 
 //NULLISH assignment operator (null or undefined)
-rest1.numGuests ??= 10;
+/* rest1.numGuests ??= 10;
 rest2.numGuests ??= 10;
 
 //AND assignment operator
@@ -82,7 +88,7 @@ rest2.owner &&= '<ANONYMOUS>';
 
 console.log(rest1);
 console.log(rest2);
-
+ */
 /* // restaurant.numGuests = 0;
 const guests = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guests);
