@@ -74,6 +74,16 @@ console.log(openStr);
 const values = Object.values(openingHours);
 console.log(values);
 
+// Entire Object
+
+const entries = Object.entries(openingHours);
+// console.log(entries);
+
+//[key , value]
+for (const [key, { open, close }] of entries) {
+  console.log(`on ${key} we open at ${open} and close at ${close}`);
+}
+
 /* //////////////////////////////////////
 // optional chanining
 
