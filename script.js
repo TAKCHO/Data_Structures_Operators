@@ -54,7 +54,22 @@ const restaurant = {
   },
 };
 
-//////////////////////////////////
+////////////////////////////////
+//SETS
+
+const orderSet = new Set([
+  'pasta',
+  'pizza',
+  'pizza',
+  'risotto',
+  'pasta',
+  'pizza',
+]);
+console.log(orderSet);
+
+console.log(new Set('tako'));
+
+/* //////////////////////////////////
 //looping objects
 
 // Property NAMES
@@ -83,7 +98,7 @@ const entries = Object.entries(openingHours);
 for (const [key, { open, close }] of entries) {
   console.log(`on ${key} we open at ${open} and close at ${close}`);
 }
-
+ */
 /* //////////////////////////////////////
 // optional chanining
 
