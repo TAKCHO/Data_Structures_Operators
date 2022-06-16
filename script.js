@@ -69,6 +69,20 @@ console.log(orderSet);
 
 console.log(new Set('tako'));
 
+console.log(orderSet.size);
+
+console.log(orderSet.has('pizza'));
+console.log(orderSet.has('bread'));
+
+orderSet.add('Garlic Bread');
+orderSet.add('Garlic Bread');
+orderSet.delete('risotto');
+console.log(orderSet);
+
+for (const order of orderSet) console.log(order);
+
+//Example
+
 /* //////////////////////////////////
 //looping objects
 
