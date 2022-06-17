@@ -54,7 +54,7 @@ const restaurant = {
   },
 };
 
-////////////////////////////////
+/* ///////////////////////////////
 //SETS
 
 const orderSet = new Set([
@@ -90,7 +90,7 @@ console.log(
   new Set(['waiter', 'chef', 'waiter', 'manager', 'chef', 'waiter']).size
 );
 
-console.log(new Set('takogiorogobiani').size);
+console.log(new Set('takogiorogobiani').size); */
 
 /* //////////////////////////////////
 //looping objects
