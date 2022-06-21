@@ -54,8 +54,23 @@ const restaurant = {
   },
 };
 
-/////////////////MAPS
+// /////////////////// MAPS PT2
 
+const question = new Map([
+  ['question', 'What is the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'Javascript'],
+  ['correct', 3],
+  [true, 'correct'],
+  [false, 'Try again'],
+]);
+console.log(question);
+
+console.log(Object.entries(openingHours));
+
+/////////////////MAPS:Fundamentals
+/* 
 const rest = new Map();
 rest.set('name', 'Classico ITaliano');
 rest.set(1, 'Firenze, Italy');
@@ -86,7 +101,7 @@ rest.set(document.querySelector('hi'), 'Heading');
 console.log(rest);
 console.log(rest.size);
 
-console.log(rest.get(arr));
+console.log(rest.get(arr)); */
 
 /* ///////////////////////////////
 //SETS
