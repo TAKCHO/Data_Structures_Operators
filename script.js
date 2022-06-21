@@ -54,6 +54,13 @@ const restaurant = {
   },
 };
 
+/////////////////MAPS
+
+const rest = new Map();
+rest.set('name', 'Classico ITaliano');
+rest.set(1, 'Firenze, Italy');
+console.log(rest.set(2, 'Lisbon, Portugal'));
+
 /* ///////////////////////////////
 //SETS
 
