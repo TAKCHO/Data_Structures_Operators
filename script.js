@@ -57,6 +57,21 @@ const restaurant = {
 /////////////////STRINGS
 
 const airline = 'TAP Air Portugal';
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+// fix capitalization in name
+const passenger = 'jOnAs';
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+
+console.log(passengerCorrect);
+
+// Check email
+
+/// working with strings - part 1
+/* const airline = 'TAP Air Portugal';
 const plane = 'A320';
 
 console.log(plane[0]);
@@ -88,7 +103,7 @@ const checkMiddleSeat = function (seat) {
 };
 checkMiddleSeat('11B');
 checkMiddleSeat('23C');
-checkMiddleSeat('3E');
+checkMiddleSeat('3E'); */
 
 /* // /////////////////// MAPS PT2
 
