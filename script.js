@@ -56,7 +56,14 @@ const restaurant = {
 
 /////////////////STRINGS
 
-const airline = 'TAP Air Portugal';
+console.log('a+very+nice+string'.split('+'));
+console.log('Tako Giorgobiani'.split(' '));
+
+const [firstName, lastName] = 'Tako Giorgobiani'.split(' ');
+
+///working with strings part 2
+
+/* const airline = 'TAP Air Portugal';
 console.log(airline.toLowerCase());
 console.log(airline.toUpperCase());
 
@@ -115,7 +122,7 @@ const checkBaggage = function (items) {
 
 checkBaggage('I have a laptop, some Food and a pocket Knife');
 checkBaggage('Socks anda camera');
-checkBaggage('Got some snacks and a gun for protection');
+checkBaggage('Got some snacks and a gun for protection'); */
 
 /// working with strings - part 1
 /* const airline = 'TAP Air Portugal';
