@@ -97,6 +97,17 @@ console.log(maskCreditCard('387938729837498374987494'));
 
 //repeat
 
+const message2 = 'Bad weather ... All departures Delayed';
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(`There are ${n} planes in line ${'.'.repeat(n)}`);
+};
+
+planesInLine(5);
+planesInLine(3);
+planesInLine(12);
+
 ///working with strings part 2
 
 /* const airline = 'TAP Air Portugal';
