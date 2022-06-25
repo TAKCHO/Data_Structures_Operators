@@ -56,10 +56,28 @@ const restaurant = {
 
 /////////////////STRINGS
 
+//split and join
 console.log('a+very+nice+string'.split('+'));
 console.log('Tako Giorgobiani'.split(' '));
 
 const [firstName, lastName] = 'Tako Giorgobiani'.split(' ');
+
+const newName = ['Mrs.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName);
+
+const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+
+  for (const n of names) {
+    // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    namesUpper.push(n.replace(n[0]), n[0].toUpperCase());
+  }
+  console.log(namesUpper.join(' '));
+};
+
+capitalizeName('Jessica ann smith davis');
+capitalizeName('tako giorgobiani');
 
 ///working with strings part 2
 
