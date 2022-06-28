@@ -57,7 +57,7 @@ const restaurant = {
 /////////////////STRINGS
 
 //split and join
-console.log('a+very+nice+string'.split('+'));
+/* console.log('a+very+nice+string'.split('+'));
 console.log('Tako Giorgobiani'.split(' '));
 
 const [firstName, lastName] = 'Tako Giorgobiani'.split(' ');
@@ -77,9 +77,9 @@ const capitalizeName = function (name) {
 };
 
 capitalizeName('Jessica ann smith davis');
-capitalizeName('tako giorgobiani');
+capitalizeName('tako giorgobiani'); */
 
-// padding
+/* // padding
 
 const message = 'Go to Gate 23!';
 console.log(message.padStart(25, '+').padEnd(30, '+'));
@@ -106,7 +106,7 @@ const planesInLine = function (n) {
 
 planesInLine(5);
 planesInLine(3);
-planesInLine(12);
+planesInLine(12); */
 
 ///working with strings part 2
 
