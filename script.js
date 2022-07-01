@@ -79,6 +79,9 @@ const capitalizeName = function (name) {
 capitalizeName('Jessica ann smith davis');
 capitalizeName('tako giorgobiani'); */
 
+next;
+ChannelSplitterNode;
+
 /* // padding
 
 const message = 'Go to Gate 23!';
